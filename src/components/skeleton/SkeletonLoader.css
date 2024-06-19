@@ -1,0 +1,40 @@
+.skeleton-loader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .skeleton-image {
+    width: 100%;
+    height: 256px; /* Height similar to product image */
+  }
+  
+  .skeleton-title, .skeleton-price, .skeleton-button {
+    width: 100%;
+  }
+  
+  .skeleton-title {
+    height: 24px;
+  }
+  
+  .skeleton-price {
+    height: 16px;
+  }
+  
+  .skeleton-button {
+    height: 40px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

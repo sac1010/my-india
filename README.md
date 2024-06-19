@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# E-commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a dynamic, responsive e-commerce platform built with React.js and Tailwind CSS, featuring reusable components, state management with Redux, responsive design, and Progressive Web App (PWA) capabilities.
 
-## Available Scripts
+# Screenshots
+![Screenshot 1](client/public/scr.png)
 
-In the project directory, you can run:
+## Live link
 
-### `npm start`
+[Click here]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Reusable Components:** Header, Footer, Product Card, Navigation Menu
+- **State Management:** Global state handling using Redux Toolkit
+- **Responsive Design:** Fully responsive across different devices and screen sizes using Tailwind CSS
+- **PWA Implementation:** Service workers for offline capabilities, Web App Manifest, and HTTPS
+- **Product Listing:** Fetches data from a mock API and displays products
+- **Product Detail Page:** Detailed view of products
+- **Shopping Cart:** Add items to the cart and view cart contents
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+   git clone https://github.com/sac1010/ecommerce-platform.git
+   cd ecommerce-platform
+   npm install
+   npm start
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Reusable Components
+- Header
+The header component with the website logo and title.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  Footer
+The footer component with basic footer content.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- NavigationMenu
+The navigation menu for easy navigation between different pages.
 
-### `npm run eject`
+- ProductCard
+Displays a product with image, title, price, and an "Add to Cart" button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## State Management
+- Redux Toolkit
+- Used for handling global state such as the shopping cart. The cartSlice.js file contains the reducer and actions for the cart functionality.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Responsive Design
+- Tailwind CSS is used for styling and ensuring the application is fully responsive across different devices and screen sizes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## PWA Implementation
+Service Worker
+A service worker is registered to enable offline capabilities. The service-worker.js file contains the logic for caching and serving the app shell and content.
 
-## Learn More
+## Additional Features
+- Product Listing Page
+  Fetches products from https://fakestoreapi.com/products and displays them in a grid layout.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Product Detail Page
+Displays detailed information about a product when clicked.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Shopping Cart
+Allows adding items to the cart and viewing the cart contents.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

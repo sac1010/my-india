@@ -3,7 +3,7 @@
 This is a dynamic, responsive e-commerce platform built with React.js and Tailwind CSS, featuring reusable components, state management with Redux, responsive design, and Progressive Web App (PWA) capabilities.
 
 # Screenshots
-![Screenshot 1](client/public/scr.png)
+![Screenshot 1](public/scr.png)
 
 ## Live link
 
